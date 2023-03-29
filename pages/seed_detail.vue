@@ -11,7 +11,7 @@
     </header>
 
     <div class="p-6">
-      <div class="bg-white rounded-xl shadow-lg shadow-black overflow-hidden p-5">
+      <div class="bg-white rounded-xl shadow-lg shadow-black overflow-hidden p-5 pb-10">
      
         <div class="flex items-center relative">
           <img src="https://picsum.photos/200/300" class="block w-20 h-20 object-cover object-top rounded-lg">
@@ -23,8 +23,8 @@
 
         <div class="h-px bg-neutral-200 my-5" />
         
-        <div class="flex items-center justify-between">
-          <dl class="flex-1 text-left border-r border-solid ">
+        <div class="flex items-center justify-between gap-5">
+          <dl class="flex-1 text-left border-r border-solid border-neutral-200">
             <dt class="text-xs text-gray-500">담당기관</dt>
             <dd class="font-bold mt-1">KSOP</dd>
           </dl>

@@ -1,18 +1,18 @@
 @use "@/assets/styles/variables";
 
-#__nuxt{
-  height:100%;
-}
-
 html,body{
+  min-height:100%;
   word-break:keep-all;
   font-family:'Roboto';
-  height:100%;
   line-height:1.25;
   -webkit-tap-highlight-color: transparent
 }
 
-.border-base{
-  @apply border border-solid border-neutral-200;
+#__nuxt{
+  height:100vh;
 }
+
+// .border-base{
+//   @apply border border-solid border-neutral-200;
+// }
 

@@ -86,6 +86,7 @@
       <button 
         class="h-14 w-full rounded-lg bg-rose-600 text-white disabled:bg-gray-200 disabled:text-neutral-400 active:bg-rose-700 mt-4"
         :disabled="!state"
+        @click="$router.push('send_finish')"
       >
         전송하기
       </button>

@@ -29,11 +29,12 @@
 
       <div class="grid grid-cols-2 gap-3">
         <div
-          class="border-base p-3 rounded-md"
+          class="border border-solid border-neutral-300 p-3 rounded-md"
           v-for="(item, index) in 5"
           :key="index"
           @click="itemSelector = index"
           :class="{active:itemSelector === index}"
+          
         >
           <div class="flex flex-col items-start">
             <strong class="text-lg font-bold mb-1">X{{item}}0</strong>
@@ -57,10 +58,15 @@
         <dt class="text-sm text-gray-500">총 비용</dt>
         <dd class="font-bold">1,000원</dd>
       </dl>
-      <button class="w-full h-12 rounded-md mt-5 bg-rose-600 text-white" @click="$router.push('cash_finish')">
+      <button 
+        class="w-full h-12 rounded-md mt-5 bg-rose-600 text-white active:bg-rose-700" 
+        @click="visible = true"
+      >
         결제하기
       </button>
     </div>
+
+    <modalMessage v-model="visible" title="충전하기" text="클로버 50개를 충전하시겠습니까?" />
   </div>
 </template>
 
@@ -70,6 +76,7 @@ definePageMeta({
 });
 
 const itemSelector = ref(0);
+const visible = ref(false)
 </script>
 
 <style lang="scss" scoped>
