@@ -1,7 +1,6 @@
 <template>
   <div>
     <header class="h-16 flex items-center px-2">
-    
       <div
         class="w-12 h-12 flex items-center justify-center active:bg-gray-200 rounded-full"
         @click="$router.go(-1)"

@@ -10,7 +10,7 @@
     </header>
 
     <div class="px-5">
-      <h2 class="text-xl font-bold">시드권 보내기(QR)</h2>
+      <h2 class="text-2xl font-bold">시드권 보내기(QR)</h2>
       <p class="mt-2 text-neutral-500 text-sm">보내실 시드권 및 수량을 선택해주세요 <br/></p>
     </div>
 

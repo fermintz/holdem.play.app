@@ -19,7 +19,7 @@
             <span class="text-[10px] text-gray-500">QR코드 지갑생성</span>
           </div>
         </button>
-        <button class="flex items-center bg-blue-50 rounded-md h-14 p-3" @click="$router.push('seed_send')">
+        <button class="flex items-center bg-blue-50 rounded-md h-14 p-3" @click="$router.push('qr_camera')">
           <span class="material-icons-round text-blue-600 mr-3">file_upload</span>
           <div class="flex flex-col text-left">
             <strong class="text-sm font-bold">보내기</strong>

@@ -10,7 +10,7 @@
     </header>
 
     <div class="px-5">
-      <h2 class="text-xl font-bold">시드권 보내기(온라인)</h2>
+      <h2 class="text-2xl font-bold">시드권 보내기(온라인)</h2>
       <p class="mt-2 text-neutral-500 text-sm ">먼 곳에 있는 사용자에게 시드권을<br/>전송할 수 있습니다.</p>
 
       <div class="flex items-center justify-between bg-neutral-100 p-3 rounded-md mt-6">
