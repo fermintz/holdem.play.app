@@ -7,8 +7,7 @@
       <div class="text-xs text-gray-500 mt-1">홀덤플레이</div>
     </header>
 
-    <div class="pb-5">
-
+    <div class="pb-5 mt-2">
       <div class="flex pl-5">
         <div class=" leading-none">
           <strong class="block h-1 bg-rose-600 rounded-full mb-2 w-3"></strong>
@@ -38,7 +37,7 @@
     <div class="flex flex-col pb-16">
       <div v-for="(item ,index) in 3" :key="index" class="border-t border-solid border-t-neutral-200 p-5">
         <div class="flex items-center">
-          <img :src="'https://picsum.photos/200/30' + index" class="block w-10 h-10 bg-cover rounded-full">
+          <img :src="'https://picsum.photos/200/30' + index" class="block w-10 h-10 bg-cover rounded-full" @click="$router.push('league_detail')">
           <div class="ml-3">
             <strong class="block font-bold">WSL</strong>
             <span class="block text-xs text-neutral-500 mt-[2px]">3월 30일</span>
