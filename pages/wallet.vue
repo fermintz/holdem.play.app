@@ -41,6 +41,7 @@
 
 
     <div class="h-px bg-gray-200 my-7" /> <!-- divider -->
+    
     <div class=" mb-5 text-sm">
       보유시드권은 총 <strong class="text-rose-600 font-bold">5장</strong>입니다.
     </div>

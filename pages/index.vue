@@ -8,29 +8,31 @@
     </header>
 
     <div class="pb-5">
-      <div class="px-5 mb-3 flex justify-between items-center">
-        
-      </div>
-      
-      <div class="flex overflow-y-scroll gap-4 px-5" id="h_scroll" >
+
+      <div class="flex pl-5">
         <div class=" leading-none">
           <strong class="block h-1 bg-rose-600 rounded-full mb-2 w-3"></strong>
           <span class="text-xs text-neutral-500 font-bold">구독중인<br/>리그</span>
         </div>
+        
+        <div class="flex overflow-y-scroll gap-4 px-5" id="h_scroll" >
+          
 
-        <dl class="text-center" 
-          v-for="(item, index) in ['전체','WSL','KSOP']" 
-          :key="index" 
-          :class="{active:tabActive === index}"
-          @click="tabActive = index"
-        >
-          <dt class="w-14 relative flex justify-center items-center">
-            <img :src="'https://picsum.photos/200/30' + index" class="block w-14 h-14 bg-cover rounded-full">
-            <span class="material-icons absolute text-rose-600 font-bold" v-show="tabActive === index">check</span>
-          </dt>
-          <dd class="text-xs mt-2">{{item}}</dd>
-        </dl>
+          <dl class="text-center" 
+            v-for="(item, index) in ['전체','WSL','KSOP','WPP','XPL','ESOP']" 
+            :key="index" 
+            :class="{active:tabActive === index}"
+            @click="tabActive = index"
+          >
+            <dt class="w-14 relative flex justify-center items-center">
+              <img :src="'https://picsum.photos/200/30' + index" class="block w-14 h-14 bg-cover rounded-full">
+              <span class="material-icons absolute text-rose-600 font-bold" v-show="tabActive === index">check</span>
+            </dt>
+            <dd class="text-xs mt-2">{{item}}</dd>
+          </dl>
+        </div>
       </div>
+      
     </div>
 
     <div class="flex flex-col pb-16">
