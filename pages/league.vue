@@ -5,9 +5,14 @@
       <p class="mt-2 text-neutral-500 text-sm ">관심있는 대회를 구독하시면<br/> 새로운 정보가 업데이트 되면 먼저 알려드립니다</p>    
     </div>
     <div class="grid grid-cols-2 gap-5 mt-10">
-      <dl v-for="item in 10" :key="item" class="flex flex-col items-center bg-neutral-100 p-4 rounded-xl" @click="$router.push('league_detail')">
+      <dl 
+        v-for="(item, index) in 10" 
+        :key="item" 
+        class="flex flex-col items-center bg-neutral-100 p-4 rounded-xl" 
+        @click="$router.push('league_detail')"
+      >
         <dt>
-          <img src="https://picsum.photos/200/303" class="w-32 h-32 object-cover rounded-full"/>
+          <img :src="'https://picsum.photos/200/30' + index" class="w-32 h-32 object-cover rounded-full"/>
         </dt>
         <dd class="flex flex-col items-center mt-3">
           <strong class="block font-bold">WPL</strong>

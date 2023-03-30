@@ -26,7 +26,7 @@
     </div>
 
     <div class="flex flex-col pb-16">
-      <div v-for="item in 3" :key="item" class="border-t border-solid border-t-neutral-200 p-5">
+      <div v-for="(item, index) in 3" :key="index" class="border-t border-solid border-t-neutral-200 p-5">
         <div class="flex items-center">
           <img src="https://picsum.photos/200/303" class="block w-10 h-10 bg-cover rounded-full">
           <div class="ml-3">
@@ -38,7 +38,7 @@
           4/8 ~ 4/11 AUP대회 일정안내 제주롯데호텔
         </p>
         <div class="image rounded-xl mt-5 relative">
-          <img src="https://picsum.photos/600/1200" class="w-full object-cover"/>
+          <img :src="'https://picsum.photos/600/120' + index" class="w-full object-cover"/>
 
           <div class="absolute top-4 right-4 bg-black bg-opacity-50 py-[1px] px-2 z-10 rounded-full text-xs text-white" >
             1/1
