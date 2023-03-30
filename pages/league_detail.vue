@@ -1,26 +1,27 @@
 <template>
-  <div class="overflow-hidden">
-    <header class="sticky top-0 w-full bg-white p-5">
-      <div class="font-sans text-3xl font-bold">
-        Holdem <strong class=" text-rose-600">Play</strong>
+  <div>
+    <div class="bg-neutral-100  h-36 absolute top-0 left-0 w-full z-0">
+    </div>
+
+    <header class="h-16 flex items-center px-2 relative z-10">
+      <div
+        class="w-12 h-12 flex items-center justify-center active:bg-gray-200 rounded-full"
+        @click="$router.go(-1)"
+      >
+        <span class="material-icons-round">arrow_back</span>
       </div>
-      <div class="text-xs text-gray-500 mt-1">홀덤플레이</div>
     </header>
 
-    <div class="pb-5">
-      <div class="flex overflow-y-scroll gap-4 px-5" id="h_scroll" >
-        <dl class="text-center" :class="{active:true}">
-          <dt class="w-14">
-            <img src="https://picsum.photos/200/302" class="block w-14 h-14 bg-cover rounded-full">
-          </dt>
-          <dd class="text-xs mt-2">전체보기</dd>
-        </dl>
-        <dl class="text-center" v-for="item in 12" :key="item">
-          <dt class="w-14">
-            <img src="https://picsum.photos/200/301" class="block w-14 h-14 bg-cover rounded-full">
-          </dt>
-          <dd class="text-xs mt-2">WSL</dd>
-        </dl>
+    <div class="flex flex-col items-center relative z-10">
+      <img src="https://picsum.photos/600/1200" class="w-36 h-36 object-cover rounded-full" />
+      <strong class="text-2xl font-bold mt-4">
+        WSL
+      </strong>
+      <button class="h-8 px-5 bg-neutral-900 text-white text-xs rounded-full mt-2">구독하기</button>
+    
+      <div class="px-5 w-full mt-10 flex justify-between items-center pb-5">
+        <span class="text-xs text-neutral-500">구독중인 회원</span>
+        <strong class="text-lg font-bold">1,344명</strong>
       </div>
     </div>
 
@@ -45,18 +46,17 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
 <script lang="ts" setup>
-
+definePageMeta({
+  layout:'empty'
+})
 </script>
 
 <style lang="scss" scoped>
-#h_scroll::-webkit-scrollbar{
-  display:none;
-}
-
 .image{
   overflow:hidden;
   position: relative;
@@ -70,15 +70,6 @@
     width:100%;
     position: absolute;
     object-fit: cover;
-  }
-}
-
-.active{
-  img{
-    border:3px solid rgb(225,29,72)
-  }
-  dd{
-    color:rgb(225,29,72)
   }
 }
 

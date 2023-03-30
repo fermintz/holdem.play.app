@@ -1,6 +1,6 @@
 <template>
   <div class="rounded-lg overflow-hidden" > <!-- 시드권 컴포넌트 -->
-    <div class="flex items-center p-4 gap-3 relative overflow-hidden bg-[url('https://picsum.photos/200/300')] bg-no-repeat bg-cover after:content-[''] after:bg-[rgba(0,0,0,0.75)] after:absolute after:left-0 after:w-full after:h-full after:z-10">
+    <div class="flex items-center p-4 gap-3 relative overflow-hidden bg-[url('https://picsum.photos/200/300')] bg-no-repeat bg-cover bg-center after:content-[''] after:bg-[rgba(0,0,0,0.8)] after:absolute after:left-0 after:w-full after:h-full after:z-10">
       <div class="w-16 h-16 rounded-full bg-gray-200 overflow-hidden z-20">
         <img src="https://picsum.photos/200/300" class="block w-full">
       </div>

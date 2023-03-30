@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-center">
+  <div class="fixed top-0 w-full h-full left-0 items-center" v-if="show">
     <transition
       appear
       enter-active-class="transition duration-500 ease-out"
@@ -9,7 +9,7 @@
       leave-from-class="opacity-100"
       leave-to-class="opacity-0"
     >
-      <div class=" bg-opacity-70 bg-black w-full h-full fixed z-10 top-0 left-0" v-if="show"  @click="show = false"/> 
+      <div class="fixed bg-opacity-70 bg-black w-full h-full z-10 top-0 left-0" v-if="show"  @click="show = false"/> 
     </transition>
     
 
@@ -23,7 +23,7 @@
       leave-from-class="translate-y-[0]"
       leave-to-class="translate-y-[100%]"
     >
-      <div class=" max-h-[70%] bg-white rounded-t-3xl absolute bottom-0 w-full z-20 p-5 pb-10 overflow-y-scroll du" v-if="show">
+      <div class="max-h-[70%] bg-white rounded-t-3xl absolute bottom-0 w-full z-20 p-5 pb-10 overflow-y-scroll du" v-if="show">
         <div class="flex items-center justify-between mt-2">
           <div>
             <h2 class="text-xl font-bold">

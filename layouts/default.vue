@@ -1,6 +1,6 @@
 <template>
   <div class="font-sans">
-    <div class="container">
+    <div class="container ">
       <slot />
     </div>
 
@@ -32,6 +32,11 @@ const bottomNav = [
     name:'홈으로',
     path:'/',
     icon:'home'
+  },
+  {
+    name:'리그',
+    path:'/league',
+    icon:'emoji_events'
   },
 
   {
