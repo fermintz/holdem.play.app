@@ -5,7 +5,11 @@ html,body{
   word-break:keep-all;
   font-family:'Roboto';
   line-height: 1.25;
-  -webkit-tap-highlight-color: transparent
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 
 #__nuxt{

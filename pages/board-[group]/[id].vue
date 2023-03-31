@@ -9,11 +9,9 @@
       </div>
     </header>
     <div class="p-5 border-b border-solid border-gray-200">
-      <div class="text-md font-bold">3월 29일 ~ 4월 2일 WFP 대회 일정안내 인천 파라다이스</div>
+      <div class="text-md font-bold">포인트 적립 안내 및 사용방법</div>
       <div class="mt-2 text-sm flex items-center gap-5">
-        <span>관리자</span>
-        <span class="h-[12px] w-px bg-gray-300"></span>
-        <span>23.03.15</span>
+        <span>23.03.14 13:45</span>
       </div>
     </div>
     <div class="p-5">

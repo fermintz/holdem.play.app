@@ -1,14 +1,5 @@
 <template>
-  <div class="pb-20">
-    <header class="h-16 flex items-center px-2">
-      <div
-        class="w-12 h-12 flex items-center justify-center active:bg-gray-200 rounded-full"
-        @click="$router.go(-1)"
-      >
-        <span class="material-icons-round">arrow_back</span>
-      </div>
-    </header>
-
+  <div>
     <div class="px-5">
       <h2 class="text-2xl font-bold">시드권 보내기(온라인)</h2>
       <p class="mt-2 text-neutral-500 text-sm ">먼 곳에 있는 사용자에게 시드권을<br/>전송할 수 있습니다.</p>
@@ -100,7 +91,7 @@
 
 <script lang="ts" setup>
 definePageMeta({
-  layout: "empty",
+  layout: "sub",
 });
 
 const state = ref(false)

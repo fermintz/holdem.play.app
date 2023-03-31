@@ -35,7 +35,7 @@
       <dl>
         <dt class="text-xs mb-4 text-neutral-500">고객센터</dt>
         <dd class="flex flex-col">
-          <button class=" text-left h-10">공지사항</button>
+          <button class=" text-left h-10" @click="$router.push('board-notice/list')">공지사항</button>
           <button class=" text-left h-10">개인정보 취급방침</button>
           <button class=" text-left h-10">서비스약관 및 정책</button>
         </dd>
