@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-hidden">
-    <header class="sticky top-0 w-full bg-white p-5">
+    <header class="relative top-0 w-full bg-white p-5 z-10">
       <div class="font-sans text-3xl font-extrabold">
         Holdem <strong class=" text-rose-600">Play</strong>
       </div>
@@ -36,6 +36,7 @@
 
     <div class="flex flex-col pb-16">
       <Feed v-for="item in 10" :key="item"/>
+      
     </div>
   </div>
 </template>
@@ -43,7 +44,7 @@
 <script lang="ts" setup>
 
 const tabActive = ref(0)
-
+const open = ref(true)
 
 
 </script>

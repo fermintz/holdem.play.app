@@ -1,5 +1,6 @@
 <template>
   <div class="border-t border-solid border-t-neutral-200 p-5">
+
     <div class="flex items-center">
       <img src="https://picsum.photos/200/300" class="block w-10 h-10 bg-cover rounded-full" @click="$router.push('league_detail')">
       <div class="ml-3">
@@ -24,21 +25,27 @@
         class="mySwiper"
       >
         <swiper-slide v-for="slide in 3" :key="slide">
-          <img src="https://picsum.photos/600/600" class="w-full"/>
+          <img src="https://picsum.photos/600/600" class="w-full"  @click="visible = true"/>
         </swiper-slide>
         <div class="custom"></div>
       </swiper>
     </div>
     <p class="pt-0 text-sm mt-3" id="hiddenTextBox" :class="{active:hiddenTextBox}">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae quia laboriosam, eaque quod fugiat, possimus delectus, cum nulla assumenda tempora commodi inventore eligendi voluptatibus sequi modi totam id quibusdam.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudia Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudia
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse adipisci placeat cumque enim, voluptates doloremque aperiam ratione pariatur sequi, corrupti et illo excepturi velit sit perspiciatis temporibus sunt repellendus officia?
     </p>
     <div class="flex items-center justify-center">
-      <button class="flex  items-center text-xs bg-neutral-200 py-1 px-3 mt-4 rounded-full" @click="hiddenTextBox = !hiddenTextBox">
+      <button class="flex  items-center text-xs bg-neutral-200 py-1 px-3 mt-4 rounded-full" @click="hiddenTextBox = !hiddenTextBox" v-show="hiddenButton">
         <span>{{hiddenTextBox ? '닫기' : '더보기'}}</span>  
         <span class="material-icons ml-1" style="font-size:14px;">{{hiddenTextBox ? 'expand_less' : 'expand_more'}}</span>
       </button>
     </div>
+
+    <ModalImageViewer v-model="visible"/>
   </div>
+
+  
+
 </template>
 
 <script lang="ts" setup>
@@ -46,6 +53,17 @@ import {Pagination} from 'swiper'
 
 const modules = [Pagination]
 const hiddenTextBox = ref(false)
+const hiddenButton = ref(false)
+const visible = ref(false)
+
+const creted = ()=>{
+  const textLength = document.getElementById('hiddenTextBox')?.innerText
+
+  if(Number(textLength?.length) >= 150){
+    hiddenButton.value = !hiddenButton.value
+  }
+}
+
 </script>
 
 <style lang="scss" scoped>
