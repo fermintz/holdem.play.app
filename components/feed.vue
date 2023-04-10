@@ -25,7 +25,7 @@
         class="mySwiper"
       >
         <swiper-slide v-for="slide in 3" :key="slide">
-          <img src="https://picsum.photos/600/600" class="w-full"  @click="visible = true"/>
+          <img src="https://picsum.photos/600/1200" class=" object-cover w-full h-full object-top"  @click="visible = true"/>
         </swiper-slide>
         <div class="custom"></div>
       </swiper>
@@ -35,7 +35,7 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse adipisci placeat cumque enim, voluptates doloremque aperiam ratione pariatur sequi, corrupti et illo excepturi velit sit perspiciatis temporibus sunt repellendus officia?
     </p>
     <div class="flex items-center justify-center">
-      <button class="flex  items-center text-xs bg-neutral-200 py-1 px-3 mt-4 rounded-full" @click="hiddenTextBox = !hiddenTextBox" v-show="hiddenButton">
+      <button class="flex  items-center text-xs bg-neutral-200 py-1 px-3 mt-4 rounded-full object-cover" @click="hiddenTextBox = !hiddenTextBox" v-show="hiddenButton">
         <span>{{hiddenTextBox ? '닫기' : '더보기'}}</span>  
         <span class="material-icons ml-1" style="font-size:14px;">{{hiddenTextBox ? 'expand_less' : 'expand_more'}}</span>
       </button>
