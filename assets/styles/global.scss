@@ -5,7 +5,6 @@ html,body{
   word-break:keep-all;
   font-family:'Roboto';
   line-height: 1.25;
-  -webkit-tap-highlight-color: transparent;
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
@@ -20,6 +19,3 @@ html,body{
 //   @apply border border-solid border-neutral-200;
 // }
 
-.statusbar-overlay{
-  background:#000
-}
