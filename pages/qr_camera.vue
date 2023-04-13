@@ -3,7 +3,7 @@
 
     <div class="fixed top-0 left-0 h-full w-full"> <!-- 카메라 자리 --></div>
 
-    <header class="h-16 flex items-center px-2 bg-neutral-900 bg-opacity-70">
+    <header class="h-16 flex items-center px-2 bg-neutral-900 bg-opacity-70 relative z-30">
       <div
         class="w-12 h-12 flex items-center justify-center active:bg-black active:bg-opacity-10 rounded-full"
         @click="$router.go(-1)"

@@ -4,9 +4,12 @@
 
     </div>
     <div class="flex flex-col gap-2 fixed bottom w-full left-0 p-8 bottom-0">
-      <div class="mb-5 flex flex-col">
-        <strong class="text-3xl font-extrabold">Holdem <b class="text-rose-600">Play</b></strong>
-        <span class="text-sm text-neutral-500">WSL</span>
+      <div class="flex items-center mb-8">
+        <img src="~/assets/img/logo.png" class="h-14">
+        <div class="ml-2 flex flex-col">
+          <span class="text-2xl font-bold text-neutral-800 leading-none">Holdem Play</span>
+          <span class="text-xs text-gray-500 mt-[2px]">홀덤플레이</span>
+        </div>
       </div>
       <button class="bg-white h-12 border border-neutral-300 rounded-md flex items-center p-5 active:bg-neutral-100" @click="$router.push('/')">
         <img src="~/assets/img/kakao.png" class=" h-6">

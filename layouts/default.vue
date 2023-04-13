@@ -8,7 +8,7 @@
       class="
       gap-4 bottomNav w-full h-14 fixed bottom-0 
       bg-white border-t border-solid border-gray-200 
-      flex items-center justify-center z-10"
+      flex items-center justify-center z-20"
     >
       <button
         v-for="(item, index) in bottomNav"

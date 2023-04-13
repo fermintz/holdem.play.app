@@ -16,7 +16,6 @@
         <span class="block text-xs text-neutral-500">보유수량</span>
       <strong class="block ml-3 font-bold">1장</strong>
       </div>
-      
     </div>
   </div>
 </template>

@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   modules:[
     '@nuxtjs/tailwindcss',
-    'nuxt-swiper'
+    'nuxt-swiper',
+    'nuxt-icon'
   ],
 
   css:[

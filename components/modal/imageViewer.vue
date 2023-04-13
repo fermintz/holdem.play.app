@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 left-0 w-full h-full z-20 flex items-center justify-center" v-if="show">
+  <div class="fixed top-0 left-0 w-full h-full z-30 flex items-center justify-center" v-if="show">
     <div class="bg-black opacity-70 fixed w-full h-full z-10">
 
     </div>

@@ -4,8 +4,8 @@
 
     </div>
     <div class="mb-5 flex flex-col text-white items-center">
-      <strong class="text-4xl font-extrabold">Holdem <b class="text-rose-600">Play</b></strong>
-      <span class="text-sm text-neutral-400">WSL</span>
+      <img src="~/assets/img/logo-w.png" class="h-20">
+      <span class="text-xl mt-3 text-neutral-500">Holdem Play</span>
     </div>
   </div>
 </template>

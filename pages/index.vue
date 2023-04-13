@@ -1,13 +1,16 @@
 <template>
-  <div class="overflow-hidden">
+  <div class="overflow-hidden pb-16">
     <header class="relative top-0 w-full bg-white p-5 z-10">
-      <div class="font-sans text-3xl font-extrabold">
-        Holdem <strong class=" text-rose-600">Play</strong>
+      <div class="flex items-center">
+        <img src="~/assets/img/logo.png" class="h-12">
+        <div class="ml-2 flex flex-col">
+          <span class="text-lg font-bold text-neutral-800 leading-none">Holdem Play</span>
+          <span class="text-xs text-gray-500 mt-[2px]">홀덤플레이</span>
+        </div>
       </div>
-      <div class="text-xs text-gray-500 mt-1">홀덤플레이</div>
     </header>
 
-    <div class="pb-5 mt-2">
+    <div class="pb-5 mt-3">
       <div class="flex pl-5">
         <div class=" leading-none">
           <strong class="block h-1 bg-rose-600 rounded-full mb-2 w-3"></strong>
@@ -34,10 +37,18 @@
       
     </div>
 
-    <div class="flex flex-col pb-16">
-      <Feed v-for="item in 10" :key="item"/>
-      
+    <div class="flex flex-col">
+      <Feed v-for="item in 3" :key="item"/>
     </div>
+
+    <div class="p-5">
+      <div class="flex justify-center bg-neutral-100 p-3 rounded-md">
+        <Icon name="svg-spinners:180-ring-with-bg" size="18" class="mr-2"></Icon>
+        <span class="text-xs text-neutral-500">불러오는 중...</span>
+      </div>
+    </div>
+
+    <ModalLoading v-model="visible"/>
   </div>
 </template>
 
@@ -45,7 +56,7 @@
 
 const tabActive = ref(0)
 const open = ref(true)
-
+const visible = ref(true)
 
 </script>
 

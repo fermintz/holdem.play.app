@@ -1,6 +1,5 @@
 <template>
   <div class="border-t border-solid border-t-neutral-200 p-5">
-
     <div class="flex items-center">
       <img src="https://picsum.photos/200/300" class="block w-10 h-10 bg-cover rounded-full" @click="$router.push('league_detail')">
       <div class="ml-3">
