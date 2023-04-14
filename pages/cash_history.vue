@@ -4,8 +4,8 @@
       <h2 class="text-2xl font-bold">캐쉬 충전내역</h2>
       <p class="mt-2 text-neutral-500 text-sm">클로버 캐시를 충전한 내역을 확인 할 수 있습니다.</p>
     </div>
-    <div class="p-5 mt-5 flex flex-col gap-10">
-      <dl class="flex flex-col" v-for="date in 3" :key="date">
+    <div class="p-5 mt-5 flex flex-col">
+      <dl class="flex flex-col pb-10 mb-10 border-b border-solid border-neutral-200 last:border-b-0" v-for="date in 3" :key="date">
         <dt class="text-xs text-neutral-500 mb-3">23.04.14</dt>
         <dd class="flex flex-col gap-6">
           <div class="flex items-center justify-between"  v-for="time in 3" :key="time">
