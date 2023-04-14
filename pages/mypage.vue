@@ -29,6 +29,7 @@
         <dd class="flex flex-col">
           <button class=" text-left h-10" @click="$router.push('seed_history')">시드권 양도내역</button>
           <button class=" text-left h-10" @click="$router.push('cash')">클로버 충전하기</button>
+          <button class=" text-left h-10" @click="$router.push('cash_history')">클로버 충전내역</button>
         </dd>
       </dl>
       <div class="h-px bg-neutral-200 my-8"></div>

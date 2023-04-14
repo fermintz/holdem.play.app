@@ -3,7 +3,7 @@
     <header class="relative top-0 w-full bg-white p-5 z-10">
       <div class="flex items-center">
         <img src="~/assets/img/logo.png" class="h-12">
-        <div class="ml-2 flex flex-col">
+        <div class="ml-3 flex flex-col">
           <span class="text-lg font-bold text-neutral-800 leading-none">Holdem Play</span>
           <span class="text-xs text-gray-500 mt-[2px]">홀덤플레이</span>
         </div>

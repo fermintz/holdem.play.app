@@ -1,14 +1,5 @@
 <template>
   <div>
-    <header class="h-16 flex items-center px-2">
-      <div
-        class="w-12 h-12 flex items-center justify-center active:bg-gray-200 rounded-full"
-        @click="$router.go(-1)"
-      >
-        <span class="material-icons-round">arrow_back</span>
-      </div>
-    </header>
-
     <div class="px-5">
       <h2 class="text-2xl font-bold">시드 전송내역</h2>
       <p class="mt-2 text-neutral-500 text-sm">시드권을 보내고 받은 내역을 확인할 수 있습니다</p>
@@ -35,7 +26,7 @@
 
 <script lang="ts" setup>
 definePageMeta({
-  layout:'empty'
+  layout:'sub'
 })
 
 

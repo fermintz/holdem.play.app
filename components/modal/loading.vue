@@ -28,7 +28,7 @@
     >
       <div class="absolute top-1/2 -translate-y-1/2 left-0 w-full z-30 px-8" v-if="show">
         <div class="flex flex-col items-center">
-          <Icon name="svg-spinners:blocks-shuffle-3" size="50" class="text-white"></Icon>
+          <Icon name="svg-spinners:blocks-shuffle-3" size="40" class="text-white"></Icon>
           <span class="text-white mt-5">자료를 불러오는 중입니다.</span>
         </div>
       </div>   
