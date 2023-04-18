@@ -1,9 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr:false,
   modules:[
     '@nuxtjs/tailwindcss',
     'nuxt-swiper',
-    'nuxt-icon'
+    'nuxt-icon',
+    'nuxt-headlessui'
   ],
 
   css:[
@@ -12,13 +14,5 @@ export default defineNuxtConfig({
     'material-icons/iconfont/material-icons.css',
   ],
 
-  vite:{
-    css:{
-      preprocessorOptions:{
-        scss:{
-          additionalData: '@use "@/assets/styles/variables.scss" as *;'
-        },
-      },
-    },
-  },
+
 })

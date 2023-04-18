@@ -29,7 +29,7 @@
       <div class="grid grid-cols-2 gap-3">
         <div
           class="border border-solid border-neutral-300 p-3 rounded-md"
-          v-for="(item, index) in 5"
+          v-for="(item, index) in 10"
           :key="index"
           @click="itemSelector = index"
           :class="{active:itemSelector === index}"
@@ -59,13 +59,14 @@
       </dl>
       <button 
         class="w-full h-12 rounded-md mt-5 bg-rose-600 text-white active:bg-rose-700" 
-        @click="visible = true"
+        @click="visible2 = true"
       >
         결제하기
       </button>
     </div>
 
     <modalMessage v-model="visible" title="충전하기" text="클로버 50개를 충전하시겠습니까?" />
+    <modalConfirm v-model="visible2"/>
   </div>
 </template>
 
@@ -75,7 +76,8 @@ definePageMeta({
 });
 
 const itemSelector = ref(0);
-const visible = ref(false)
+const visible = ref(false);
+const visible2 = ref(false);
 </script>
 
 <style lang="scss" scoped>

@@ -49,8 +49,6 @@
         </div>
       </div>
     </transition>
-    
-
   </div>
   
 </template>
@@ -78,6 +76,14 @@ const onSelected =  (state: boolean) => {
   emits('selectorSeed', state),
   console.log('선택함')
 }
+
+watch(props, ()=>{
+  if(props.modelValue === true){
+    document.body.style.cssText = `overflow:hidden`
+  }else{
+    document.body.style.cssText = `overflow-y:auto`
+  }
+})
 
 </script>
 

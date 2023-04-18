@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 left-0 w-full h-full overflow-hidden z-30" v-if="show">
+  <div class="fixed top-0 left-0 w-full h-full overflow-hidden z-30" v-if="show" id="modal">
     <transition
       appear
       enter-active-class="transition duration-500 ease-out"
@@ -55,6 +55,7 @@ const show = computed({
     emits('update:modelValue', change)
   }
 })
+
 
 
 </script>
