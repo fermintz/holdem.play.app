@@ -34,11 +34,11 @@
           <button class="px-4 h-8 text-xs bg-neutral-200 rounded-md" @click="show = false">닫기</button>
         </div>
         <div class="flex flex-col gap-8 mt-6">
-          <div class="flex justify-between items-center" v-for="item in 8" :key="item" @click="onSelected(true)">
+          <div class="flex justify-between items-center" @click="onSelected(true)">
             <div class="flex items-center ">
-              <img src="https://picsum.photos/200/400" class="w-14 h-14 overflow-hidden object-cover rounded-full">
+              <img src="~/assets/img/profile01.png" class="w-14 h-14 overflow-hidden object-cover rounded-full">
               <div class="flex flex-col ml-3">
-                <strong class="font-bold">WPL</strong>
+                <strong class="font-bold">HL</strong>
                 <span class="text-xs text-neutral-500">World Play Leguae</span>
               </div>
             </div>
@@ -46,6 +46,46 @@
               1장
             </div>
           </div>
+
+          <div class="flex justify-between items-center" @click="onSelected(true)">
+            <div class="flex items-center ">
+              <img src="~/assets/img/profile02.png" class="w-14 h-14 overflow-hidden object-cover rounded-full">
+              <div class="flex flex-col ml-3">
+                <strong class="font-bold">KSOP</strong>
+                <span class="text-xs text-neutral-500">World Play Leguae</span>
+              </div>
+            </div>
+            <div class="font-bold">
+              1장
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center" @click="onSelected(true)">
+            <div class="flex items-center ">
+              <img src="~/assets/img/profile03.png" class="w-14 h-14 overflow-hidden object-cover rounded-full">
+              <div class="flex flex-col ml-3">
+                <strong class="font-bold">KMGM</strong>
+                <span class="text-xs text-neutral-500">World Play Leguae</span>
+              </div>
+            </div>
+            <div class="font-bold">
+              1장
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center" @click="onSelected(true)">
+            <div class="flex items-center ">
+              <img src="~/assets/img/profile04.png" class="w-14 h-14 overflow-hidden object-cover rounded-full">
+              <div class="flex flex-col ml-3">
+                <strong class="font-bold">WSP</strong>
+                <span class="text-xs text-neutral-500">World Play Leguae</span>
+              </div>
+            </div>
+            <div class="font-bold">
+              1장
+            </div>
+          </div>
+          
         </div>
       </div>
     </transition>

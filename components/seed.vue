@@ -1,8 +1,8 @@
 <template>
   <div class="rounded-lg overflow-hidden" > <!-- 시드권 컴포넌트 -->
-    <div class="flex items-center p-4 gap-3 relative overflow-hidden bg-[url('https://picsum.photos/200/300')] bg-no-repeat bg-cover bg-center after:content-[''] after:bg-[rgba(0,0,0,0.8)] after:absolute after:left-0 after:w-full after:h-full after:z-10">
+    <div class="flex items-center p-4 gap-3 relative overflow-hidden bg-[url('~/assets/img/profile01.png')]  bg-no-repeat bg-cover bg-center after:content-[''] after:bg-[rgba(0,0,0,0.8)] after:absolute after:left-0 after:w-full after:h-full after:z-10">
       <div class="w-16 h-16 rounded-full bg-neutral-200 overflow-hidden z-20">
-        <img src="https://picsum.photos/200/300" class="block w-full">
+        <img src="~/assets/img/profile01.png" class="block w-full">
       </div>
       <div class="flex-1 z-20">
         <div class="font-bold text-white">WPL</div>
@@ -14,7 +14,7 @@
       <span class="text-xs text-neutral-500">KSOP</span>
       <div class="flex items-center"> 
         <span class="block text-xs text-neutral-500">보유수량</span>
-      <strong class="block ml-3 font-bold">1장</strong>
+      <strong class="block ml-3 font-bold">3장</strong>
       </div>
     </div>
   </div>
@@ -23,6 +23,8 @@
 <script lang="ts" setup>
 const route = useRoute()
 const isShow = computed(()=> route.path === '/wallet')
+
+
 
 </script>
 

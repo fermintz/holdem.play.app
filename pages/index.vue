@@ -18,19 +18,45 @@
         </div>
         
         <div class="flex overflow-y-scroll gap-4 px-5" id="h_scroll" >
-          
-
           <dl class="text-center" 
-            v-for="(item, index) in ['전체','WSL','KSOP','WPP','XPL','ESOP']" 
-            :key="index" 
-            :class="{active:tabActive === index}"
-            @click="tabActive = index"
+            :class="{active:tabActive === 0}"
+            @click="tabActive = 0"
           >
             <dt class="w-14 relative flex justify-center items-center">
-              <img :src="'https://picsum.photos/200/30' + index" class="block w-14 h-14 bg-cover rounded-full">
-              <span class="material-icons absolute text-rose-600 font-bold" v-show="tabActive === index">check</span>
+              <img src="~/assets/img/profile00.png" class="block w-14 h-14 bg-cover rounded-full"> 
+              <span class="material-icons absolute text-rose-600 font-bold" v-show="0 === tabActive">check</span>
             </dt>
-            <dd class="text-xs mt-2">{{item}}</dd>
+            <dd class="text-xs mt-2">ALL</dd>
+          </dl>
+          <dl class="text-center" 
+            :class="{active:tabActive === 1}"
+            @click="tabActive = 1"
+          >
+            <dt class="w-14 relative flex justify-center items-center">
+              <img src="~/assets/img/profile01.png" class="block w-14 h-14 bg-cover rounded-full"> 
+              <span class="material-icons absolute text-rose-600 font-bold" v-show="1 === tabActive">check</span>
+            </dt>
+            <dd class="text-xs mt-2">WSL</dd>
+          </dl>
+          <dl class="text-center" 
+            :class="{active:tabActive === 2}"
+            @click="tabActive = 2"
+          >
+            <dt class="w-14 relative flex justify-center items-center">
+              <img src="~/assets/img/profile02.png" class="block w-14 h-14 bg-cover rounded-full"> 
+              <span class="material-icons absolute text-rose-600 font-bold" v-show="2 === tabActive">check</span>
+            </dt>
+            <dd class="text-xs mt-2">KSOP</dd>
+          </dl>
+          <dl class="text-center" 
+            :class="{active:tabActive === 3}"
+            @click="tabActive = 3"
+          >
+            <dt class="w-14 relative flex justify-center items-center">
+              <img src="~/assets/img/profile03.png" class="block w-14 h-14 bg-cover rounded-full"> 
+              <span class="material-icons absolute text-rose-600 font-bold" v-show="3 === tabActive">check</span>
+            </dt>
+            <dd class="text-xs mt-2">KMGM</dd>
           </dl>
         </div>
       </div>
@@ -47,16 +73,13 @@
         <span class="text-xs text-neutral-500">불러오는 중...</span>
       </div>
     </div>
-
-    <ModalLoading v-model="visible"/>
   </div>
 </template>
 
 <script lang="ts" setup>
-
 const tabActive = ref(0)
-const open = ref(true)
-const visible = ref(true)
+
+
 
 </script>
 

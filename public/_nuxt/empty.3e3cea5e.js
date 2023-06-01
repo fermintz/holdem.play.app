@@ -1,0 +1,1 @@
+import{a as t}from"./entry.4fe93dad.js";import{m as o,F as s,a1 as r}from"./swiper-vue.a7e98229.js";const a={},c={class:"h-full"};function n(e,l){return o(),s("div",c,[r(e.$slots,"default")])}const m=t(a,[["render",n]]);export{m as default};

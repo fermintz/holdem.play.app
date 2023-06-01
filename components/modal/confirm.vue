@@ -16,7 +16,12 @@
           </div>
           <div class="flex justify-end gap-2 mt-4">
             <button class="h-10 bg-neutral-200 px-4 text-sm rounded-md" @click="show=false">취소</button>
-            <button class="h-10 bg-rose-600 text-white px-4 text-sm rounded-md" @click="show=false">확인</button>
+            <button class="h-10 bg-rose-600 text-white px-4 text-sm rounded-md" 
+              @click="()=>{
+                $router.push('cash_finish') 
+                show=false
+              }"
+            >확인</button>
           </div>
         </div>
       </transition>
@@ -49,8 +54,9 @@ const show = computed({
 watch(props, ()=>{
   if(props.modelValue === true){
     document.body.style.cssText = `overflow:hidden`
+
   }else{
-    document.body.style.cssText = `overflow-y:auto`
+    document.body.style.cssText = `overflow:inherit`
   }
 })
 

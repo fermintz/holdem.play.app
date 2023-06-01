@@ -13,9 +13,9 @@
     </header>
 
     <div class="flex flex-col items-center relative z-10">
-      <img src="https://picsum.photos/600/1200" class="w-36 h-36 object-cover rounded-full" />
+      <img src="~/assets/img/profile01.png" class="w-36 h-36 object-cover rounded-full" />
       <strong class="text-2xl font-bold mt-4">
-        WSL
+        HL
       </strong>
       <button class="h-8 px-5 bg-neutral-900 text-white text-xs rounded-full mt-2">구독하기</button>
     
@@ -26,7 +26,7 @@
     </div>
 
     <div class="flex flex-col pb-16">
-      <Feed v-for="item in 5" :key="item"/>
+      <Feed />
     </div>
 
   </div>

@@ -14,7 +14,7 @@
       <div class="bg-white rounded-xl shadow-lg shadow-black overflow-hidden p-5 pb-10">
      
         <div class="flex items-center relative">
-          <img src="https://picsum.photos/200/300" class="block w-20 h-20 object-cover object-top rounded-lg">
+          <img src="~/assets/img/profile02.png" class="block w-20 h-20 object-cover object-top rounded-lg">
           <dl class=" flex-1 ml-4">
             <dt class="font-bold text-xl">WPL</dt>
             <dd class="text-sm text-gray-500">Winjoy Poker League</dd>

@@ -29,7 +29,7 @@
       <div class="grid grid-cols-2 gap-3">
         <div
           class="border border-solid border-neutral-300 p-3 rounded-md"
-          v-for="(item, index) in 10"
+          v-for="(item, index) in 5"
           :key="index"
           @click="itemSelector = index"
           :class="{active:itemSelector === index}"

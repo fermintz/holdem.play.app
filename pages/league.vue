@@ -6,13 +6,52 @@
     </div>
     <div class="grid grid-cols-2 gap-5 mt-10">
       <dl 
-        v-for="(item, index) in 10" 
-        :key="item" 
+
         class="flex flex-col items-center bg-neutral-100 p-4 rounded-xl" 
         @click="$router.push('league_detail')"
       >
         <dt>
-          <img :src="'https://picsum.photos/200/30' + index" class="w-32 h-32 object-cover rounded-full"/>
+          <img src="~/assets/img/profile01.png" class="w-32 h-32 object-cover rounded-full"/>
+        </dt>
+        <dd class="flex flex-col items-center mt-3">
+          <strong class="block font-bold">HL</strong>
+          <button class="bg-white h-7 text-xs rounded-full px-3 mt-2 border border-solid border-neutral-300 active:bg-neutral-100">구독하기</button>
+        </dd>
+      </dl>
+      <dl 
+
+        class="flex flex-col items-center bg-neutral-100 p-4 rounded-xl" 
+        @click="$router.push('league_detail')"
+      >
+        <dt>
+          <img src="~/assets/img/profile02.png" class="w-32 h-32 object-cover rounded-full"/>
+        </dt>
+        <dd class="flex flex-col items-center mt-3">
+          <strong class="block font-bold">KSOP</strong>
+          <button class="bg-white h-7 text-xs rounded-full px-3 mt-2 border border-solid border-neutral-300 active:bg-neutral-100">구독하기</button>
+        </dd>
+      </dl>
+      <dl 
+
+        class="flex flex-col items-center bg-neutral-100 p-4 rounded-xl" 
+        @click="$router.push('league_detail')"
+      >
+        <dt>
+          <img src="~/assets/img/profile03.png" class="w-32 h-32 object-cover rounded-full"/>
+        </dt>
+        <dd class="flex flex-col items-center mt-3">
+          <strong class="block font-bold">KMGM</strong>
+          <button class="bg-white h-7 text-xs rounded-full px-3 mt-2 border border-solid border-neutral-300 active:bg-neutral-100">구독하기</button>
+        </dd>
+      </dl>
+
+      <dl 
+
+        class="flex flex-col items-center bg-neutral-100 p-4 rounded-xl" 
+        @click="$router.push('league_detail')"
+      >
+        <dt>
+          <img src="~/assets/img/profile04.png" class="w-32 h-32 object-cover rounded-full"/>
         </dt>
         <dd class="flex flex-col items-center mt-3">
           <strong class="block font-bold">WPL</strong>

@@ -9,7 +9,7 @@
         :centeredSlides="true"
         :speed="1500"
         :loop="true"
-        :spaceBetween="0"
+        :spaceBetween="20"
         :pagination="{
           type:'fraction',
           el:`.custom`
@@ -18,8 +18,11 @@
         :modules="modules"
         class="mySwiper"
       >
-        <swiper-slide v-for="slide in 3" :key="slide" class=" rounded-lg overflow-hidden">
-          <img src="https://picsum.photos/600/1700" class="w-full"/>
+        <swiper-slide class=" rounded-lg overflow-hidden">
+          <img src="~/assets/img/P01-1.jpeg" class="w-full"/>
+        </swiper-slide>
+        <swiper-slide class=" rounded-lg overflow-hidden">
+          <img src="~/assets/img/P01-2.jpeg" class="w-full"/>
         </swiper-slide>
         <div class="custom"></div>
       </swiper>
